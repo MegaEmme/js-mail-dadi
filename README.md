@@ -28,6 +28,10 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
 ### Bonus
 Invece di generare il numero random per l'utente, chiedilo con un prompt!
 
+#### *Pseudo-codice*
+---
+
+
 ## Consigli
 Prima di partire a scrivere codice poniamoci qualche domanda:
 Che ci sia un array da qualche parte?
