@@ -29,6 +29,22 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
 Invece di generare il numero random per l'utente, chiedilo con un prompt!
 
 #### *Pseudo-codice*
+
+- calcolo randomicamnete un numero tra 1 e 6
+- lo stampo
+- chiedo all'utente di inserire un numero da 1 a 6 
+- controllo se il numero è compreso tra 1 e 6 
+- **se** il numero è compreso tra 1 e 6
+    - **se** il numero inserito è maggiore di quello randomico
+        - stampo 'Hai vinto'
+    - **se** il numero inserito è minore di quello randomico
+        - stampo 'Hai perso'
+    - **se** il numero inserito è uguale a quello randomico
+        - stampo 'Pareggio'
+
+- **altrimenti** 
+    mando messaggio di errore
+    - ripeto il ciclo
 ---
 
 
