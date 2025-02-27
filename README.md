@@ -9,6 +9,19 @@ Si può fare? Certo che si basta ragionare un po’.
 
 Non è necessario provvedere alla validazione delle email
 
+#### *Pseudo-codice*
+---
+- creo una lista partecipanti
+- la stampo a schermo
+- chiedo all'utente di inserire la mail
+    - **per** ogni nome nell'elenco
+        - cerco nella lista se c'è la mail dell'utente 
+        - **se** è presente
+            - stampo "presente"
+            - chiudo il ciclo
+- **se** la mail utente non è presente
+    - stampo "non presente" 
+
 ## Gioco dei dadi
 Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 Stabilire il vincitore, in base a chi fa il punteggio più alto.
