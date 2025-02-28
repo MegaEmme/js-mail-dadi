@@ -15,32 +15,27 @@ console.log("Mike's Dice")
 
 - **altrimenti** 
     mando messaggio di errore
-- ripeto il ciclo
 */
 
 const randomicNumbers = Math.floor(Math.random()*6+1);
 console.log(randomicNumbers);
 
-let userNumber = prompt('Per continuare, inserisci un numero da 1 a 6')
-if (userNumber>0 && userNumber<7){
-    if(userNumber > randomicNumbers && userNumber < 7){
-        console.log('Hai vinto!')
-    } else if (userNumber < randomicNumbers && userNumber > 0) {
-        console.log('Hai perso!')
-    } else if (userNumber == randomicNumbers){
-        console.log('Pareggio!');
-    }
-} else {
-    alert('Spiacente, il numero deve essere compreso tra 1 e 6')
-    let userNumber = prompt('Per continuare, inserisci un numero da 1 a 6')
+let userNumber = prompt('Per continuare, inserisci un numero da 1 a 6');
+
+
     if (userNumber>0 && userNumber<7){
-         if(userNumber > randomicNumbers && userNumber < 7){
-            console.log('Hai vinto!')
+        if(userNumber > randomicNumbers && userNumber < 7){
+            console.log('Hai vinto!');
         } else if (userNumber < randomicNumbers && userNumber > 0) {
-            console.log('Hai perso!')
+            console.log('Hai perso!');
         } else if (userNumber == randomicNumbers){
             console.log('Pareggio!');
         }
+    } else {
+        alert('Spiacente, il numero deve essere compreso tra 1 e 6');
     }
-}
+    
+
+
+
 

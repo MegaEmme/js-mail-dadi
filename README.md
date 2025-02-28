@@ -44,7 +44,6 @@ Invece di generare il numero random per l'utente, chiedilo con un prompt!
 
 - **altrimenti** 
     mando messaggio di errore
-    - ripeto il ciclo
 ---
 
 
