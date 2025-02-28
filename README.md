@@ -43,7 +43,7 @@ Invece di generare il numero random per l'utente, chiedilo con un prompt!
         - stampo 'Pareggio'
 
 - **altrimenti** 
-    mando messaggio di errore
+    - mando messaggio di errore
 ---
 
 
