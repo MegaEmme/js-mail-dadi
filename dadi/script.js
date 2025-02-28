@@ -25,7 +25,7 @@ console.log(randomicNumbers);
 
 let userNumber = parseInt(prompt('Per continuare, inserisci un numero da 1 a 6'));
 
-const isNumberValid = userNumber>=1 && userNumber<=6 && !isNaN(userNumber);
+const isNumberValid = (userNumber>=1 && userNumber<=6) || !isNaN(userNumber);
 
 if (userNumber>0 && userNumber<7 && isNumberValid){
     if(userNumber > randomicNumbers && userNumber < 7){
