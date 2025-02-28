@@ -17,13 +17,17 @@ console.log("Mike's Dice")
     - mando messaggio di errore
 */
 
-const randomicNumbers = Math.floor(Math.random()*6+1); // +1 perchè deve partire da 1 (non da 0)
-
+const randomicNumbers = Math.floor(Math.random()*6+1); 
+// math.floor *6+1 perchè deve partire da 1 (non da 0)
+// math.ceil invece parte gia da 1 quindi basta fare *6
+// math.round invece *5+1 (sono i n.da 0 a 5 ==> +1 ==>sono i n.da 1 a 6)
 console.log(randomicNumbers);
 
-let userNumber = prompt('Per continuare, inserisci un numero da 1 a 6');
+let userNumber = parseInt(prompt('Per continuare, inserisci un numero da 1 a 6'));
 
-if (userNumber>0 && userNumber<7){
+const isNumberValid = userNumber>=1 && userNumber<=6 && !isNaN(userNumber);
+
+if (userNumber>0 && userNumber<7 && isNumberValid){
     if(userNumber > randomicNumbers && userNumber < 7){
         console.log('Hai vinto!');
     } else if (userNumber < randomicNumbers && userNumber > 0) {
@@ -31,5 +35,7 @@ if (userNumber>0 && userNumber<7){
     } else if (userNumber == randomicNumbers){
         console.log('Pareggio!');
     }
+} else {
+    console.log('Il numero non è valido');
 }
 
